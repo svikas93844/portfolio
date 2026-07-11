@@ -588,3 +588,91 @@ footer {
         padding: 40px 20px;
     }
 }
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 55px;
+    height: 55px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-top-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn.visible::before {
+    opacity: 1;
+    animation: pulseGlow 2.5s infinite;
+}
+
+.scroll-top-btn.visible:hover {
+    transform: translateY(-5px);
+    background: var(--surface-hover);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+}
+
+.scroll-top-btn:hover::before {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(139, 92, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+    }
+}
+
+.scroll-top-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.scroll-top-btn.visible svg {
+    animation: arrowFloat 2s ease-in-out infinite;
+}
+
+@keyframes arrowFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+.scroll-top-btn:hover svg {
+    animation: none;
+    transform: translateY(-4px);
+}

@@ -97,3 +97,25 @@ tiltCards.forEach(card => {
         card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
     });
 });
+
+// 5. Scroll to Top Button
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+// Show/Hide on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        if(scrollTopBtn) scrollTopBtn.classList.add('visible');
+    } else {
+        if(scrollTopBtn) scrollTopBtn.classList.remove('visible');
+    }
+});
+
+// Scroll to top on click
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
