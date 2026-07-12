@@ -4,136 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> VIKAS S</title>
+    <title>VIKAS S | Portfolio</title>
     <!-- Modern Typography -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap"
-        rel="stylesheet">
-
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to external CSS (Versioned to bust cache) -->
+    <link rel="stylesheet" href="css/style.css?v=7.0">
 </head>
 
 <body>
+    <!-- Vanta.js Background Container -->
+    <div id="vanta-bg"></div>
 
-    <!-- Ambient Background -->
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <!-- Header -->
     <header>
-        <div class="logo">VIKAS S</div>
+        <div class="logo"><span class="highlight">VIKAS S</span></div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#about" class="hover-link">About</a></li>
+                <li><a href="#skills" class="hover-link">Skills</a></li>
+                <li><a href="#projects" class="hover-link">Work</a></li>
+                <li><a href="#education" class="hover-link">Education</a></li>
             </ul>
         </nav>
-        <a href="#contact" class="nav-cta">Let's Talk</a>
+        <a href="#contact" class="nav-cta hover-link">Let's Talk</a>
     </header>
 
-    <div class="container">
+    <main class="container">
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-content reveal active">
-                <h1>Designing interfaces,<br>building <span class="typing-text">solutions.</span></h1>
-                <p>Hi, I'm Vikas S. A creative and detail-oriented Computer Science and Design student with a
-                    strong foundation in frontend development and database-backed applications. I build user-friendly
-                    interfaces and real-world tools using modern technologies.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="https://linkedin.com/in/svikas93844/" target="_blank" class="btn btn-outline">LinkedIn
-                        Profile</a>
+            <div class="hero-content">
+                <div class="hero-badge scroll-reveal">Available for opportunities</div>
+                <h1 class="gsap-title">Designing <span class="highlight">interfaces</span>,<br>building <span class="typing-text"></span></h1>
+                <p class="scroll-reveal delay-1">Hi, I'm Vikas S. A creative and detail-oriented Computer Science and Design student with a strong foundation in frontend development and database-backed applications. I build user-friendly interfaces and real-world tools using modern technologies.</p>
+                <div class="hero-btns scroll-reveal delay-2">
+                    <a href="#projects" class="btn btn-primary hover-link">
+                        <span>View My Work</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/svikas93844" target="_blank" class="btn btn-outline hover-link">GitHub</a>
+                    <a href="https://linkedin.com/in/svikas93844/" target="_blank" class="btn btn-outline hover-link">LinkedIn</a>
+                    <a href="https://leetcode.com/u/svikas93844/" target="_blank" class="btn btn-outline hover-link">LeetCode</a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="reveal">
-            <div class="section-header">
+        <section id="about" class="section-padding">
+            <div class="section-header scroll-reveal">
                 <span class="section-subtitle">00. Introduction</span>
                 <h2 class="section-title">About Me</h2>
             </div>
             
             <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Vikas, a passionate Computer Science and Design student who enjoys creating things that live on the internet. My interest in software development started when I began building custom user interfaces and database-backed applications.</p>
-                    <p>Fast-forward to today, and I've had the privilege of developing interactive mobile apps, hospital management systems, and user-focused web applications. My main focus is on building accessible, inclusive products and writing clean, efficient code.</p>
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <ul class="about-tech-list">
-                        <li>JavaScript</li>
-                        <li>React Native</li>
-                        <li>Python</li>
-                        <li>MySQL & MongoDB</li>
-                    </ul>
+                <div class="about-text scroll-reveal reveal-left">
+                    <p>Hello! I'm Vikas, a highly adaptable and detail-oriented professional with a strong foundation in Computer Science and Design. I am passionate about solving complex problems, streamlining processes, and delivering high-quality results across various roles and industries.</p>
+                    <p>Throughout my academic and project experiences, I have developed a versatile skill set that allows me to quickly learn new tools and adapt to different environments. Whether I am analyzing data, managing a project, or collaborating with a team to build user-focused solutions, my goal is always to create a meaningful impact and continuously grow.</p>
                 </div>
-                <div class="about-image-wrapper">
+                <div class="about-image-wrapper scroll-reveal reveal-right">
                     <div class="about-image">
-                        <div class="avatar-placeholder">VS</div>
+                        <div class="avatar-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--neon-teal)" />
+                                        <stop offset="100%" stop-color="var(--neon-purple)" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
                     </div>
+                    <div class="about-image-backdrop"></div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="reveal">
-            <div class="section-header">
+        <section id="skills" class="section-padding">
+            <div class="section-header scroll-reveal">
                 <span class="section-subtitle">01. What I Do</span>
                 <h2 class="section-title">Technical Expertise</h2>
             </div>
 
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card hover-link scroll-reveal delay-1">
                     <span class="skill-icon">🌐</span>
                     <div class="skill-name">HTML / CSS</div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card hover-link scroll-reveal delay-2">
                     <span class="skill-icon">⚡</span>
                     <div class="skill-name">JavaScript</div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card hover-link scroll-reveal delay-3">
                     <span class="skill-icon">🎨</span>
                     <div class="skill-name">Figma</div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card hover-link scroll-reveal delay-4">
                     <span class="skill-icon">🐍</span>
                     <div class="skill-name">Python</div>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card hover-link scroll-reveal delay-5">
                     <span class="skill-icon">🗄️</span>
                     <div class="skill-name">MySQL</div>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">🎮</span>
-                    <div class="skill-name">Unity</div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="reveal">
-            <div class="section-header">
+        <section id="projects" class="section-padding">
+            <div class="section-header scroll-reveal">
                 <span class="section-subtitle">02. Selected Work</span>
                 <h2 class="section-title">Featured Projects</h2>
             </div>
 
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">🏥</div>
+                <div class="project-card scroll-reveal hover-link">
+                    <div class="project-img">
+                        <span class="project-emoji">🏥</span>
+                        <div class="project-overlay"></div>
+                    </div>
                     <div class="project-content">
                         <span class="project-tag">DBMS PROJECT</span>
                         <h3 class="project-title">Hospital Management System</h3>
                         <div class="project-desc">
                             <ul>
-                                <li>Designed responsive user interfaces using HTML and CSS for hospital operations
-                                    during COVID.</li>
-                                <li>Implemented backend logic with Python and MySQL to support bed booking and slot
-                                    allocation.</li>
-                                <li>Focused on usability and clarity to enable quick access for patients and
-                                    administrators.</li>
+                                <li>Designed responsive user interfaces using HTML and CSS for hospital operations during COVID.</li>
+                                <li>Implemented backend logic with Python and MySQL to support bed booking and slot allocation.</li>
+                                <li>Focused on usability and clarity to enable quick access for patients and administrators.</li>
                             </ul>
                         </div>
                         <div class="project-tech">
@@ -146,16 +149,18 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">💬</div>
+                <div class="project-card scroll-reveal delay-2 hover-link">
+                    <div class="project-img">
+                        <span class="project-emoji">💬</span>
+                        <div class="project-overlay"></div>
+                    </div>
                     <div class="project-content">
                         <span class="project-tag">MOBILE APPLICATION</span>
                         <h3 class="project-title">Chat-Based Finance App</h3>
                         <div class="project-desc">
                             <ul>
                                 <li>Developed the frontend and UI of an Android app using React Native.</li>
-                                <li>Designed a chat-based interaction system for handling finance-related user queries.
-                                </li>
+                                <li>Designed a chat-based interaction system for handling finance-related user queries.</li>
                                 <li>Integrated MongoDB for efficient data storage and retrieval.</li>
                             </ul>
                         </div>
@@ -167,86 +172,196 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
+                <div class="project-card scroll-reveal delay-4 hover-link">
+                    <div class="project-img">
+                        <span class="project-emoji">📡</span>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">IOT & HARDWARE</span>
+                        <h3 class="project-title">Smart Object Detection System</h3>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Built an interactive radar system using an ESP32 microcontroller and an ultrasonic sensor to detect surrounding objects.</li>
+                                <li>Programmed the ESP32 to command a servo motor to rotate 90 degrees and process real-time distance data.</li>
+                                <li>Designed a dynamic visual radar display using the Processing IDE to map detected objects on the screen.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>ESP32</span>
+                            <span>Python</span>
+                            <span>Processing IDE</span>
+                            <span>Hardware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card scroll-reveal delay-6 hover-link">
+                    <div class="project-img">
+                        <span class="project-emoji">👔</span>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">CONSULTANCY PROJECT</span>
+                        <h3 class="project-title">Zain Fabrics Platform</h3>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Developed a full-stack MERN application connecting a leather supply company with shoe manufacturers.</li>
+                                <li>Built a secure admin dashboard to manage product catalogs, categories, customer data, and orders.</li>
+                                <li>Engineered a responsive, scalable platform with secure user authentication for seamless B2B transactions.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Education & Achievements Section -->
-        <section id="education" class="reveal">
-            <div class="section-header">
+        <!-- Education Section -->
+        <section id="education" class="section-padding">
+            <div class="section-header scroll-reveal">
                 <span class="section-subtitle">03. Background</span>
                 <h2 class="section-title">Education & Achievements</h2>
             </div>
 
-            <div class="edu-grid">
-                <div class="edu-card">
-                    <h3>Academic History</h3>
-
-                    <div class="edu-item">
-                        <h4>Kongu Engineering College</h4>
-                        <p>Bachelor of Engineering – Computer Science and Design</p>
-                        <p style="color: var(--accent-secondary); margin-top: 5px;">CGPA: 7.05</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <h4>SriVenkateshwara International Senior Secondary School</h4>
-                        <p>Grade 12: 64%</p>
-                        <p>Grade 10: 69%</p>
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal reveal-left hover-link">
+                    <div class="project-content">
+                        <span class="project-tag">EDUCATION</span>
+                        <h3 class="project-title">Academic History</h3>
+                        <div class="project-desc">
+                            <ul>
+                                <li>
+                                    <strong style="color: var(--text-primary); font-size: 1.1rem;">Kongu Engineering College</strong> (2023-2027)<br>
+                                    B.E. - Computer Science and Design<br>
+                                    <span style="color: var(--neon-teal); font-family: var(--font-code);">CGPA: 7.05</span>
+                                </li>
+                                <li style="margin-top: 1.5rem;">
+                                    <strong style="color: var(--text-primary); font-size: 1.1rem;">Sri Venkateshwara International Senior Secondary School</strong><br>
+                                    Grade 12: 64% (2022-2023)<br>
+                                    Grade 10: 69% (2020-2021)
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="edu-card">
-                    <h3>Certifications & Milestones</h3>
-                    <ul class="achievement-list">
-                        <li>Successfully completed Oracle Java Foundations Certification.</li>
-                        <li>Earned NPTEL certification in Privacy and Security in Online Social Media.</li>
-                        <li>Earned NPTEL certification in Human Computer Interaction.</li>
-                        <li>Completed and delivered two academic projects, including a mobile app and a DBMS-based
-                            system.</li>
-                        <li>Proficient in Time Management, Teamwork, and Communication.</li>
-                    </ul>
+                <div class="project-card scroll-reveal reveal-right delay-2 hover-link">
+                    <div class="project-content">
+                        <span class="project-tag">ACHIEVEMENTS</span>
+                        <h3 class="project-title">Certifications & Milestones</h3>
+                        <div class="project-desc">
+                            <ul>
+                                <li>🏆 Successfully completed Oracle Java Foundations Certification.</li>
+                                <li>🏆 Earned NPTEL certification in Privacy and Security in Online Social Media.</li>
+                                <li>🏆 Earned NPTEL certification in Human Computer Interaction.</li>
+                                <li>🏆 Completed and delivered two academic projects, including a mobile app and a DBMS-based system.</li>
+                                <li>🏆 Proficient in Time Management, Teamwork, and Communication.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <span class="section-subtitle">04. Get In Touch</span>
-                    <h3>Let's build something amazing together.</h3>
-                    <p>I am eager to learn, motivated to grow as a software/UI developer, and open to new opportunities.
-                        Feel free to reach out via email, phone, or LinkedIn!</p>
+        <section id="contact" class="section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-subtitle">04. Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="project-card scroll-reveal reveal-scale hover-link">
+                    <div class="project-content" style="text-align: center; padding: 4rem 2rem;">
+                        <h3 class="project-title" style="margin-top: 1rem; margin-bottom: 2rem; font-size: 2.5rem;">Let's build something amazing.</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                            I am eager to learn, motivated to grow, and always open to discussing new opportunities or exciting projects. Feel free to connect!
+                        </p>
+                        
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                            <a href="mailto:svikas93844@gmail.com" class="contact-card hover-link" style="min-width: 250px;">
+                                <div class="contact-card-left">
+                                    <span class="contact-card-icon">📧</span>
+                                    <div style="text-align: left;">
+                                        <span class="contact-card-title">Email</span>
+                                        <span class="contact-card-detail">svikas93844@gmail.com</span>
+                                    </div>
+                                </div>
+                            </a>
 
-                    <div class="contact-links">
-                        <a href="mailto:svikas93844@gmail.com" class="contact-link">
-                            📧 svikas93844@gmail.com
-                        </a>
-                        <a href="tel:9384493948" class="contact-link">
-                            📞 9384493948
-                        </a>
-                        <a href="https://linkedin.com/in/svikas93844/" target="_blank" class="contact-link">
-                            💼 LinkedIn Profile
-                        </a>
+                            <a href="tel:9384493948" class="contact-card hover-link" style="min-width: 250px;">
+                                <div class="contact-card-left">
+                                    <span class="contact-card-icon">📞</span>
+                                    <div style="text-align: left;">
+                                        <span class="contact-card-title">Phone</span>
+                                        <span class="contact-card-detail">+91 93844 93948</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://linkedin.com/in/svikas93844/" target="_blank" class="contact-card hover-link" style="min-width: 250px;">
+                                <div class="contact-card-left">
+                                    <span class="contact-card-icon">💼</span>
+                                    <div style="text-align: left;">
+                                        <span class="contact-card-title">LinkedIn</span>
+                                        <span class="contact-card-detail">svikas93844</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/svikas93844" target="_blank" class="contact-card hover-link" style="min-width: 250px;">
+                                <div class="contact-card-left">
+                                    <span class="contact-card-icon">💻</span>
+                                    <div style="text-align: left;">
+                                        <span class="contact-card-title">GitHub</span>
+                                        <span class="contact-card-detail">svikas93844</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="https://leetcode.com/u/svikas93844/" target="_blank" class="contact-card hover-link" style="min-width: 250px;">
+                                <div class="contact-card-left">
+                                    <span class="contact-card-icon">🏆</span>
+                                    <div style="text-align: left;">
+                                        <span class="contact-card-title">LeetCode</span>
+                                        <span class="contact-card-detail">svikas93844</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 VIKAS S </p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer style="text-align: center; width: 100%; display: flex; justify-content: center; align-items: center; padding: 2rem 0;">
+        <p style="margin: 0; text-align: center; width: 100%;">&copy; 2026 VIKAS </p>
+    </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 19V5M5 12l7-7 7 7"/>
-        </svg>
-    </button>
 
-    <!-- Link to external Javascript -->
-    <script src="../js/script.js" defer></script>
+
+
+    <!-- External Libraries (Three.js, Vanta.js, GSAP) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js" defer></script>
 </body>
-
 </html>
