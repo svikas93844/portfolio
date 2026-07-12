@@ -39,6 +39,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -48,6 +49,8 @@ body {
     font-family: var(--font-main);
     line-height: 1.6;
     cursor: none; /* Hide default for custom cursor */
+    overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 
 /* Vanta.js Background */
@@ -237,7 +240,9 @@ nav a:hover {
     line-height: 1.05;
     margin-bottom: 1.5rem;
     letter-spacing: -0.04em;
-    /* GSAP SplitType will wrap characters in divs */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Typing Effect Cursor */
